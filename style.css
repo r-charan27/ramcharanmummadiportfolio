@@ -1,0 +1,322 @@
+/* GLOBAL STYLES */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* LIGHT MODE */
+
+body.light {
+    background: #f9fafb;
+    color: #111827;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.theme-icon {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 8%;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3b82f6;
+}
+
+.hero-text p {
+    line-height: 1.6;
+}
+
+.hero-image img {
+    width: 260px;
+    border-radius: 50%;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    background: #3b82f6;
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-outline {
+    border: 1px solid #3b82f6;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #3b82f6;
+}
+
+
+/* SECTION LAYOUT */
+
+.section {
+    padding: 120px 10%;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.section-text {
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* PROJECT GRID */
+
+.project-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+/* PROJECT CARDS */
+
+.project-card {
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: rotateY(8deg) rotateX(8deg);
+}
+
+
+/* DARK MODE PROJECT CARDS */
+
+body:not(.light) .project-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+
+/* LIGHT MODE PROJECT CARDS */
+
+body.light .project-card {
+    background: #ffffff;
+    color: #111;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* SKILLS GRID */
+
+.skills-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+/* SKILL BADGES */
+
+.skills-grid span {
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.skills-grid span:hover {
+    transform: translateY(-3px);
+}
+
+
+/* DARK SKILLS */
+
+body:not(.light) .skills-grid span {
+    background: #1e293b;
+    color: white;
+}
+
+
+/* LIGHT SKILLS */
+
+body.light .skills-grid span {
+    background: #e5e7eb;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+
+/* EXPERIENCE + CERTIFICATION GRID */
+
+.card-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+/* INFO CARDS */
+
+.info-card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+/* DARK MODE INFO CARDS */
+
+body:not(.light) .info-card {
+    background: rgba(255,255,255,0.05);
+    color: white;
+}
+
+
+/* LIGHT MODE INFO CARDS */
+
+body.light .info-card {
+    background: #ffffff;
+    color: #111;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+
+/* CONTACT FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-family: inherit;
+}
+
+
+/* LIGHT INPUT FIX */
+
+body.light input,
+body.light textarea {
+    border: 1px solid #d1d5db;
+}
+
+
+button {
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-image {
+    margin-top: 40px;
+}
+
+.nav {
+    display: none;
+}
+
+}
