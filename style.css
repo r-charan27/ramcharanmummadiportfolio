@@ -307,33 +307,37 @@ footer {
 
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 900px) {
+@media (max-width:700px){
 
-.hero {
-    flex-direction: column;
-    text-align: center;
+.hero{
+    flex-direction:column;
+    text-align:center;
 }
 
-.hero-image {
-    margin-top: 40px;
+.hero-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
-
-.nav {
-    display: none;
-}
-
-}
-@media (max-width: 600px) {
 
 .hero-buttons{
-    flex-direction: column;
-    align-items: flex-start;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    width:100%;
 }
 
-.btn,
-.btn-outline{
-    width: 200px;
-    text-align: center;
+.btn-primary{
+    width:220px;
+    text-align:center;
+}
+
+.social-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
 }
 
 }
