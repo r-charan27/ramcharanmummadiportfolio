@@ -305,39 +305,92 @@ footer {
 }
 
 
-/* RESPONSIVE DESIGN */
+/* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width:700px){
+@media (max-width: 768px){
+
+/* HEADER */
+
+.header{
+    padding:15px 20px;
+}
+
+.nav{
+    display:none;
+}
+
+/* HERO SECTION */
 
 .hero{
     flex-direction:column;
     text-align:center;
+    padding:80px 20px;
 }
 
-.hero-text{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.hero-image img{
+    width:180px;
+    margin-top:30px;
 }
+
+/* HERO BUTTONS */
 
 .hero-buttons{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
     gap:15px;
-    width:100%;
-}
-
-.btn-primary{
-    width:220px;
-    text-align:center;
 }
 
 .social-buttons{
-    display:flex;
     justify-content:center;
-    gap:15px;
+}
+
+/* SECTION SPACING */
+
+.section{
+    padding:80px 20px;
+}
+
+/* PROJECT CARDS */
+
+.project-grid{
+    flex-direction:column;
+    align-items:center;
+}
+
+.project-card{
+    width:100%;
+    max-width:320px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+    gap:10px;
+}
+
+.skills-grid span{
+    font-size:14px;
+    padding:8px 14px;
+}
+
+/* EXPERIENCE + CERTIFICATIONS */
+
+.card-grid{
+    flex-direction:column;
+    align-items:center;
+}
+
+.info-card{
+    width:100%;
+    max-width:300px;
+}
+
+/* CONTACT FORM */
+
+form{
+    width:100%;
+    max-width:300px;
 }
 
 }
