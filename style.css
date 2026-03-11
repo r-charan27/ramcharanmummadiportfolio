@@ -23,11 +23,16 @@ body.light {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
+    position: relative;
 }
 
 .logo {
     font-size: 22px;
     font-weight: 600;
+}
+
+.nav {
+    display: flex;
 }
 
 .nav a {
@@ -40,6 +45,22 @@ body.light {
 .theme-icon {
     cursor: pointer;
     font-size: 22px;
+}
+
+/* HEADER ICONS */
+
+.header-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* HAMBURGER BUTTON */
+
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
 }
 
 
@@ -315,8 +336,33 @@ footer {
     padding:15px 20px;
 }
 
+/* SHOW HAMBURGER */
+
+.menu-toggle{
+    display:block;
+}
+
+/* MOBILE NAV MENU */
+
 .nav{
-    display:none;
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#111827;
+    width:200px;
+    flex-direction:column;
+    padding:20px;
+    gap:15px;
+    transform:translateX(100%);
+    transition:0.3s;
+}
+
+.nav.active{
+    transform:translateX(0);
+}
+
+.nav a{
+    margin:0;
 }
 
 /* HERO SECTION */
@@ -335,14 +381,9 @@ footer {
 /* HERO BUTTONS */
 
 .hero-buttons{
-    display:flex;
     flex-direction:column;
     align-items:center;
     gap:15px;
-}
-
-.social-buttons{
-    justify-content:center;
 }
 
 /* SECTION SPACING */

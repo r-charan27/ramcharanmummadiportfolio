@@ -11,7 +11,12 @@ loop:true
 
 
 const toggle=document.getElementById("themeToggle");
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
 
+menuToggle.onclick = () => {
+    navMenu.classList.toggle("active");
+};
 toggle.onclick=()=>{
 document.body.classList.toggle("light");
 
