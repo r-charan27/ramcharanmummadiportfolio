@@ -6,11 +6,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mummadi Ramcharan | AI Engineer</title>
+<title>Mummadi Ramcharan | AI Engineer & ML Expert</title>
+<meta name="description" content="Portfolio of Mummadi Ramcharan, an AI Engineer specializing in Machine Learning, Deep Learning, and Agentic AI systems.">
+<meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, RAMCHARAN, Mummadi, Portfolio, NexusMind, Python, TensorFlow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://r-charan27.github.io/">
+<meta property="og:title" content="Mummadi Ramcharan | AI Engineer">
+<meta property="og:description" content="Building the future of AI with advanced Machine Learning and Deep Learning solutions.">
+<meta property="og:image" content="images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://r-charan27.github.io/">
+<meta property="twitter:title" content="Mummadi Ramcharan | AI Engineer">
+<meta property="twitter:description" content="Building the future of AI with advanced Machine Learning and Deep Learning solutions.">
+<meta property="twitter:image" content="images/og-image.jpg">
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
@@ -19,251 +34,266 @@
 
 <body>
 
-<header class="header">
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
 
-<div class="logo">Ramcharan</div>
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
 
-<nav class="nav" id="navMenu">
+<!-- Background Canvas for Mesh -->
+<canvas id="bgCanvas"></canvas>
 
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
+<header class="header glass">
+  <div class="logo-container">
+    <div class="rc-logo">RC</div>
+    <div class="logo">RamCharan</div>
+  </div>
+  <nav class="nav" id="navMenu">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-icons">
+    <div id="themeToggle" class="theme-icon">☀️</div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+</header>
 
-</nav>
-
-<div class="header-icons">
-
-<div id="themeToggle" class="theme-icon">🌙</div>
-
-<div class="menu-toggle" id="menuToggle">
-☰
-</div>
-
-</div></header>
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>Mummadi Ramcharan</h1>
-
-<h2><span id="typing"></span></h2>
-
-<p>
-AI Engineer focused on Machine Learning,
-Deep Learning and intelligent AI systems.
-</p>
-
-<div class="hero-buttons">
-
-<a href="images/resume.pdf" class="btn">Download Resume</a>
-
-<a href="https://github.com/r-charan27" class="btn-outline" target="_blank">
-GitHub
-</a>
-
-<a href="https://linkedin.com/in/ramcharan-mummadi-5973a72a3" class="btn-outline" target="_blank">
-LinkedIn
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-image">
-
-<img src="images/profile.jpg">
-
-</div>
-
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="glitch" data-text="Mummadi Ramcharan">Mummadi Ramcharan</h1>
+      <h2>I am <span id="typing"></span></h2>
+      <p>AI Engineer focused on Machine Learning, Deep Learning and intelligent AI systems. Specializing in building scalable agentic platforms.</p>
+      <div class="hero-buttons">
+        <a href="images/resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+        <div class="social-links">
+          <a href="https://github.com/r-charan27" target="_blank" title="GitHub">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/ramcharan-mummadi-5973a72a3" target="_blank" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-container">
+      <img src="images/profile.jpg" alt="Ramcharan" class="profile-img">
+      <div class="image-glow"></div>
+    </div>
+  </div>
 </section>
-
-
 
 <section id="about" class="section">
-
-<h2>About Me</h2>
-
-<p class="section-text">
-
-AI & Machine Learning enthusiast with experience building
-AI healthcare systems, financial analytics tools and
-AI orchestration platforms.
-
-</p>
-
+  <h2 class="section-title">About Me</h2>
+  <p class="section-text">
+  AI & Machine Learning enthusiast with experience building
+  AI healthcare systems, financial analytics tools and
+  AI orchestration platforms.
+  </p>
 </section>
-
-
 
 <section id="projects" class="section">
+  <h2 class="section-title">Featured Projects</h2>
+  
+  <div class="filter-container">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ai">AI</button>
+    <button class="filter-btn" data-filter="ml">ML</button>
+    <button class="filter-btn" data-filter="data">Data Science</button>
+    <button class="filter-btn" data-filter="web">FastAPI</button>
+  </div>
 
-<h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card glass" data-category="ai ml">
+      <div class="project-img-wrapper">
+        <img src="images/lung-ai.jpg" alt="Lung Cancer AI">
+      </div>
+      <div class="project-info">
+        <h3>Lung Cancer Prediction AI</h3>
+        <p>Deep learning healthcare system detecting lung cancer types and predicting survival probability.</p>
+        <div class="project-tags">
+          <span>TensorFlow</span>
+          <span>CNN</span>
+        </div>
+      </div>
+    </div>
 
-<div class="project-grid">
+    <div class="project-card glass" data-category="ai ml web">
+      <div class="project-img-wrapper">
+        <img src="images/nexusmind.jpg" alt="Nexus Mind AI">
+      </div>
+      <div class="project-info">
+        <h3>Nexus Mind AI Platform</h3>
+        <p>Agentic AI orchestration platform integrating multiple AI agents using FastAPI.</p>
+        <div class="project-tags">
+          <span>FastAPI</span>
+          <span>Agentic AI Orchestrator</span>
+        </div>
+      </div>
+    </div>
 
-<div class="project-card">
-
-<img src="images/lung-ai.jpg">
-
-<h3>Lung Cancer Prediction AI</h3>
-
-<p>
-Deep learning healthcare system detecting lung cancer types
-and predicting survival probability.
-</p>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="images/nexusmind.jpg">
-
-<h3>Nexus Mind AI Platform</h3>
-
-<p>
-Agentic AI orchestration platform integrating
-multiple AI agents using FastAPI.
-</p>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="images/tradingbot.jpg">
-
-<h3>Algorithmic Trading Bot</h3>
-
-<p>
-Machine learning trading strategy simulator
-for financial market analysis.
-</p>
-
-</div>
-
-</div>
-
+    <div class="project-card glass" data-category="data">
+      <div class="project-img-wrapper">
+        <img src="images/tradingbot.jpg" alt="Trading Bot">
+      </div>
+      <div class="project-info">
+        <h3>Algorithmic Trading Bot</h3>
+        <p>Machine learning trading strategy simulator for financial market analysis.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 <section id="skills" class="section">
-
-<h2>Skills</h2>
-
-<div class="skills-grid">
-
-<span>Python</span>
-<span>Machine Learning</span>
-<span>Deep Learning</span>
-<span>TensorFlow</span>
-<span>FastAPI</span>
-<span>Streamlit</span>
-<span>SQL</span>
-<span>PowerBI</span>
-<span>Tableau</span>
-<span>Git</span>
-
-</div>
-
+  <h2 class="section-title">Expertise</h2>
+  <div class="skills-container">
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>Python</span>
+        <span>95%</span>
+      </div>
+      <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>Machine Learning</span>
+        <span>90%</span>
+      </div>
+      <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>Deep Learning</span>
+        <span>85%</span>
+      </div>
+      <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-info">
+        <span>TensorFlow/PyTorch</span>
+        <span>80%</span>
+      </div>
+      <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+    </div>
+  </div>
 </section>
-
-
 
 <section id="experience" class="section">
-
-<h2>Experience</h2>
-
-<div class="card-grid">
-
-<div class="info-card">
-<h3>Zetheta Algorithms</h3>
-<p>Algo Risk Developer</p>
-</div>
-
-<div class="info-card">
-<h3>Elevate Labs</h3>
-<p>ML & Data Analyst Intern</p>
-</div>
-
-<div class="info-card">
-<h3>Oasis Infobyte</h3>
-<p>Data Science Intern</p>
-</div>
-
-</div>
-
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item glass">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Algo Risk Developer</h3>
+        <h4>Zetheta Algorithms</h4>
+        <p>Developing advanced algorithmic risk models and financial analysis tools.</p>
+      </div>
+    </div>
+    <div class="timeline-item glass">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>ML & Data Analyst Intern</h3>
+        <h4>Elevate Labs</h4>
+        <p>Focused on machine learning model implementation and data visualization.</p>
+      </div>
+    </div>
+    <div class="timeline-item glass">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Data Science Intern</h3>
+        <h4>Oasis Infobyte</h4>
+        <p>Working on data-driven projects and predictive analytics.</p>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 <section id="certifications" class="section">
-
-<h2>Certifications</h2>
-
-<div class="card-grid">
-
-<div class="info-card">IBM SkillsBuild – AI in Healthcare</div>
-
-<div class="info-card">Microsoft Copilot Badge</div>
-
-<div class="info-card">Cisco NetAcad – Python Essentials</div>
-
-<div class="info-card">Cisco NetAcad – CCNA</div>
-
-<div class="info-card">Innomatics Workshop</div>
-
-</div>
-
+  <h2 class="section-title">Certifications</h2>
+  <div class="cert-grid">
+    <div class="cert-card glass">
+      <div class="cert-icon">🏆</div>
+      <h3>IBM SkillsBuild</h3>
+      <p>AI in Healthcare</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon">🤖</div>
+      <h3>Microsoft</h3>
+      <p>Copilot Badge</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon">🐍</div>
+      <h3>Cisco NetAcad</h3>
+      <p>Python Essentials</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon">🌐</div>
+      <h3>Cisco NetAcad</h3>
+      <p>CCNA</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon">🎓</div>
+      <h3>Innomatics</h3>
+      <p>Workshop Completion</p>
+    </div>
+  </div>
 </section>
-
-
 
 <section id="contact" class="section">
-
-<h2>Get In Touch</h2>
-
-<p class="section-text">
-
-Open to opportunities and collaborations.
-
-</p>
-
-<form action="https://formsubmit.co/rcmummadi@gmail.com" method="POST">
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-
-<input type="text" name="name" placeholder="Name" required>
-
-<input type="email" name="email" placeholder="Email" required>
-
-<input type="text" name="phone" placeholder="Phone">
-
-<textarea name="message" placeholder="Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
+  <div class="contact-container glass">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-text">Open to opportunities and collaborations. Let's build something amazing together.</p>
+    
+    <form action="https://formsubmit.co/rcmummadi@gmail.com" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary submit-btn">Send Message 🚀</button>
+    </form>
+  </div>
 </section>
 
-
+<!-- AI Chat Assistant Bubble -->
+<div class="ai-chat-container">
+  <div class="chat-bubble" id="chatBubble">
+    <div class="chat-header">
+      <span>AI Assistant</span>
+      <button id="closeChat">×</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <p class="bot-msg">Hi! I'm Ramcharan's AI assistant. How can I help you today?</p>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Ask me something...">
+      <button id="sendChat">➤</button>
+    </div>
+  </div>
+  <button class="chat-toggle-btn" id="chatToggle">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z"></path></svg>
+  </button>
+</div>
 
 <footer>
-
-<p> Mummadi Ramcharan</p>
-
+  <p class="uppercase-name">MUMMADI RAMCHARAN</p>
 </footer>
 
-
-<script src="script.js"></script>
+<script src="script.js?v=1.1"></script>
 
 </body>
 </html>
